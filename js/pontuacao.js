@@ -3,19 +3,33 @@ function pedirVoto() {
     return voto;
 }
 function categoria(votos) {
-    switch (true) {
-    case (voto >=0 && voto <= 2):
-        console.log(`Muito fraco`);
-        // codice da eseguire se espressione === valore1
-        break
-    case (voto >=3 && voto <= 4):
-        // codice da eseguire se espressione === valore1
-        return "Insuficiente";
-    default:
-        // codice da eseguire se nessun caso corrisponde
-        return "Valor inválido";
-}
     
+        switch (true) {
+        case (voto >=0 && voto <= 2):
+            console.log(`Muito fraco`);
+            // codice da eseguire se espressione === valore1
+            break
+        case (voto >=3 && voto <= 4):
+            console.log(`Insuficiente`);
+            // codice da eseguire se espressione === valore1
+            break
+        case (voto >=5 && voto <= 6):
+            console.log(`Suficiente`);
+            // codice da eseguire se espressione === valore1
+            break
+        case (voto >=7 && voto <= 8):
+            console.log(`Bom`);
+            // codice da eseguire se espressione === valore1
+            break
+        case (voto >=9 && voto <= 10):
+            console.log(`Excelente`);
+            // codice da eseguire se espressione === valore1
+            break
+        default:
+            console.log(`Valor fora do intervalo permitido.`);
+            // codice da eseguire se espressione === valore1
+            break
+    }
 
 }
 
